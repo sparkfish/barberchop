@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="Barberchop",
-    version="1.0.0",
+    version="1.0.1",
     author="Sparkfish LLC",
     author_email="packages@sparkfish.com",
     description="Segments, classifies and extracts barcode images from larger images containing one or more barcodes.",

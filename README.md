@@ -15,7 +15,7 @@ pip install barberchop
 import cv2
 from Barberchop.ExtractionService import BarberchopYoloService
 
-service = BarberchopYoloService('barberchop/weights/Barberchop_20210512.pt')
+service = BarberchopYoloService()
 img = cv2.imread('barberchop/src/test.png')
 results = service.extract(img)
 
