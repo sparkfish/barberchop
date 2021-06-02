@@ -1,4 +1,5 @@
 import cv2
+import os
 import torch
 from PIL import Image
 from yolov5 import YOLOv5
@@ -15,9 +16,18 @@ class Barcode:
     self.y2 = y2
 
 class BarberchopYoloService():
-  def __init__(self, weights, resize_shape=(1000,1000), image_sizes=[640]):
+  def __init__(self, weights=None, use_pretrained=True, resize_shape=(1000,1000), image_sizes=[640]):
     self.resize_shape = resize_shape
     self.image_sizes = image_sizes
+    
+    if (use_pretrained==True):
+      weights = './barberchop.pt'
+  
+      if (not os.path.isfile(weights)):
+        torch.hub.download_url_to_file("https://github.com/sparkfish/barberchop/raw/dev/weights/Barberchop_20210512.pt", weights)
+    elif(weights is None):
+      print("Weights must be specified if use_pretrained=False")
+          
     self.detector = YOLOv5(weights, 'cpu')
 
   def extract(self, document_image):
