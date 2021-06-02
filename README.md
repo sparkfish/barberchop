@@ -3,7 +3,7 @@ Segments, classifies and extracts barcode images from larger images containing o
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install augraphy.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install barberchop.
 
 ```bash
 pip install barberchop
