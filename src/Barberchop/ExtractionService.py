@@ -119,3 +119,4 @@ class BarberchopYoloService():
       barcodes.append(barcode)
 
     return barcodes
+  
