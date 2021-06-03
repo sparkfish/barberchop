@@ -1,6 +1,16 @@
 # barberchop
 Segments, classifies and extracts barcode images from larger images containing one or more barcodes.
 
+## Overview
+
+Barberchop is a library for detecting and extracting barcodes from images using neural networks trained for object detection or segmentation. Once these barcodes are extracted they can then be passed along to other libraries for image enhancement and decoding.
+
+## How It Works
+
+Barberchop uses the custom trained models using datasets of images with barcodes in them.
+
+![Barcode Extraction Process](images/barcode_extraction.png)
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install barberchop.
