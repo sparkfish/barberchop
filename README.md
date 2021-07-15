@@ -1,3 +1,5 @@
+![Barberchop Logo](https://user-images.githubusercontent.com/1108065/125807092-f30de925-a918-42d2-a99c-2eebaf8eff75.png)
+
 # barberchop
 Segments, classifies and extracts barcode images from larger images containing one or more barcodes.
 
